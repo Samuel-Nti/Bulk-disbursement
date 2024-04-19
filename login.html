@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login - Bulk Disbursement Application</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pattern-with-shades-orange.jpg'); /* Add the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #ffdeab;
+    color: #36322e;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+        button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #ff9900;
+    color: #8d8b8b;
+    padding: 10px 0;
+    text-align: center;
+
+
+        }
+
+        nav img {
+            max-width: 40px; /* Adjust the maximum width of the image */
+            margin-right: 5px; /* Add margin to separate the image from other items */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="wallet.png" alt="Logo" width="70" height="40"> 
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="support.html">Support</a>
+        <a href="aboutus.html">About</a>
+        
+    </nav>
+    <div class="container">
+       
+        <h1>Bulk Disbursement App</h1>
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button onclick="login()">Login</button>
+
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <footer>
+        <p>&copy;Copyright © 2024 Nkrumah Solutions 2020. All Rights Reserved.</p>
+         </footer>
+
+    <script>
+            function login() {
+            // Implement login logic here
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Example validation (replace with actual authentication logic)
+            if (username === 'admin' && password === 'password') {
+                // Redirect to main application page after successful login
+                window.location.href = 'index.html'; // Replace 'index.html' with your main application page
+                   } else {
+                alert('Invalid username or password.');
+                    }
+             }
+
+    </script>
+</body>
+</html>
